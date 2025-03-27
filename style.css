@@ -1,9 +1,15 @@
+:root {
+  --title-color: linear-gradient(#c31432, #240b36);
+  --background-color: #34495e;
+  --primary-color: #2980b9;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #34495e;
+  background-color: var(--background-color);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -16,6 +22,9 @@ body {
 
 .title {
   margin: 20px 0 0;
+  background: var(--title-color);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .game {
@@ -65,7 +74,7 @@ body {
 
 /* For Letter */
 .letter {
-  border-bottom: 3px solid #2980b9;
+  border-bottom: 3px solid var(--primary-color);
   display: inline-flex;
   font-size: 30px;
   align-items: center;
@@ -90,7 +99,7 @@ body {
 }
 
 .popup__content {
-  background: #2980b9;
+  background: var(--primary-color);
   border-radius: 5px;
   box-shadow: 0 15px 10px 3px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -100,7 +109,7 @@ body {
 .popup__button {
   cursor: pointer;
   background-color: #fff;
-  color: #2980b9;
+  color: var(--primary-color);
   border: 0;
   margin-top: 20px;
   padding: 12px 20px;
@@ -115,7 +124,7 @@ body {
   outline: 0;
 }
 
-.notificatio {
+.notification {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px 10px 0 0;
   padding: 15px 20px;
@@ -126,4 +135,8 @@ body {
 
 .notification__text {
   margin: 0;
+}
+
+.notification.show {
+  transform: translateY(-50px);
 }
