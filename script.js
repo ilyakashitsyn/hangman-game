@@ -9,3 +9,5 @@ const figureParts = document.querySelectorAll('.figure-part');
 
 // Words
 const words = ['application', 'programming', 'interface', 'wizard'];
+
+let selectedWord = words[Math.floor(Math.random() * words.length)];
