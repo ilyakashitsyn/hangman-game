@@ -77,7 +77,7 @@ const showNotification = () => {
 window.addEventListener('keydown', e => {
   // console.log(e.key);
   if (e.keyCode >= 65 && e.keyCode <= 90) {
-    const letter = e.keyCode;
+    const letter = String.fromCharCode(e.keyCode).toLowerCase();
 
     if (selectedWord.includes(letter)) {
       if (!correctLetters.includes(letter)) {
