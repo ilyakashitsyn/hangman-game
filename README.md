@@ -2,6 +2,8 @@
 
 Select a letter to figure out a hidden word in a set amount of chances
 
+You can check out the ready-made solution on [Netlify](https://hangman-game-b3c570.netlify.app/)
+
 ### Project Specifications
 
 - Display hangman pole and figure using SVG
